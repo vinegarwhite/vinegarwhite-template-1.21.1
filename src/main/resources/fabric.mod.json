@@ -8,8 +8,7 @@
 		"vinegarwhite"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/vinegarwhite/vinegarwhite-template-1.21.1"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/vinegarwhite/icon.png",
