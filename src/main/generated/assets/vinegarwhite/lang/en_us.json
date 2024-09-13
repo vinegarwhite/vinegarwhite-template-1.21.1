@@ -1,0 +1,14 @@
+{
+  "block.vinegarwhite.ice_ether_block": "Ice Ether Block",
+  "block.vinegarwhite.ice_ether_ore": "Ice Ether Ore",
+  "block.vinegarwhite.raw_ice_ether_block": "Raw Ice Ether Block",
+  "item.vinegarwhite.alpha_pill": "α Pill",
+  "item.vinegarwhite.beta_pill": "β Pill",
+  "item.vinegarwhite.cheese": "Cheese",
+  "item.vinegarwhite.delta_pill": "δ Pill",
+  "item.vinegarwhite.gamma_pill": "γ Pill",
+  "item.vinegarwhite.ice_ether": "Ice Ether",
+  "item.vinegarwhite.raw_ice_ether": "Raw Ice Ether",
+  "item.vinegarwhite.strawberry": "Strawberry",
+  "itemGroup.vinegarwhite_group": "Vinegarwhite Group"
+}

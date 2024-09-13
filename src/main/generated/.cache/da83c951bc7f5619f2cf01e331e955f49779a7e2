@@ -1,0 +1,4 @@
+// 1.21.1	2024-09-13T12:22:46.6354191	vinegarwhite/Tags for minecraft:block
+83692c17adfa6900c0222e343f45c26251fcf844 data\minecraft\tags\block\needs_stone_tool.json
+7f7016c3063fad32884a09274e697d31163baaa0 data\minecraft\tags\block\mineable\pickaxe.json
+2cd634566836acb01ba37c5115836ea95fd16b05 data\minecraft\tags\block\needs_iron_tool.json

@@ -1,5 +1,8 @@
 package com.vinegarwhite;
 
+import com.vinegarwhite.block.ModBlocks;
+import com.vinegarwhite.item.ModItemGroups;
+import com.vinegarwhite.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +21,13 @@ public class Vinegarwhite implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+		// 注册物品
+		ModItems.registerModItems();
+		// 注册方块
+		ModBlocks.registerModBlocks();
+		// 注册创造模式物品栏
+		ModItemGroups.registerModItemGroups();
 
 		LOGGER.info("Hello Fabric world!");
 	}
