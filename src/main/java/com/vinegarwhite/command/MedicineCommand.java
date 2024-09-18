@@ -2,7 +2,6 @@ package com.vinegarwhite.command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
-import com.mojang.brigadier.context.CommandContext;
 import com.vinegarwhite.attribute.MedicineEntityAttributes;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.entity.attribute.EntityAttributeInstance;

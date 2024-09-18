@@ -1,11 +1,8 @@
 package com.vinegarwhite.item.custom.food;
 
-import net.minecraft.client.sound.Sound;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.item.HoneyBottleItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.UseAction;

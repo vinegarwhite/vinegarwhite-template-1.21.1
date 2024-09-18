@@ -1,5 +1,6 @@
 package com.vinegarwhite.attribute;
 
+import com.vinegarwhite.Vinegarwhite;
 import net.minecraft.entity.attribute.ClampedEntityAttribute;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.registry.Registries;
@@ -16,6 +17,6 @@ public class MedicineEntityAttributes {
     );
 
     private static RegistryEntry<EntityAttribute> register(String id, EntityAttribute attribute) {
-        return Registry.registerReference(Registries.ATTRIBUTE, Identifier.ofVanilla(id), attribute);
+        return Registry.registerReference(Registries.ATTRIBUTE, Identifier.of(Vinegarwhite.MOD_ID ,id), attribute);
     }
 }

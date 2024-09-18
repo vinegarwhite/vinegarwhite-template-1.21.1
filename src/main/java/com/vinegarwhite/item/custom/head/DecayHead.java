@@ -1,21 +1,16 @@
-package com.vinegarwhite.item.custom.plants;
+package com.vinegarwhite.item.custom.head;
 
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.Equipment;
 import net.minecraft.item.Item;
 
-public class PottedCactus extends Item implements Equipment {
-
-
-    public PottedCactus(Settings settings) {
+public class DecayHead extends Item implements Equipment {
+    public DecayHead(Settings settings) {
         super(settings);
     }
 
-    // 实现可以戴到头上
     @Override
     public EquipmentSlot getSlotType() {
         return EquipmentSlot.HEAD;
     }
-
-
 }

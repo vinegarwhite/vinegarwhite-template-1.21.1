@@ -78,6 +78,9 @@ public class ModENUSLanProvider extends FabricLanguageProvider {
         // 属性
         translationBuilder.add("attribute.name.generic.mental_state", "Mental State");
 
+        // 药水效果
+        translationBuilder.add("effect.vinegarwhite.severe_condition", "Severe Condition");
+
         // 描述信息
         translationBuilder.add("item.salad.shift_tooltip", "");
         translationBuilder.add("item.salad.tooltip", "Dietary guidelines recommend a general recommendation of 300-500g of at least 5 types of vegetables per day \nhold §6SHIFT§r for more information");

@@ -4,6 +4,7 @@ import com.vinegarwhite.Vinegarwhite;
 import com.vinegarwhite.item.custom.fishing.Strange_Vial;
 import com.vinegarwhite.item.custom.food.Cola;
 import com.vinegarwhite.item.custom.food.Salad;
+import com.vinegarwhite.item.custom.head.DecayHead;
 import com.vinegarwhite.item.custom.pills.AlphaPill;
 import com.vinegarwhite.item.custom.pills.BetaPill;
 import com.vinegarwhite.item.custom.pills.DeltaPill;
@@ -12,8 +13,6 @@ import com.vinegarwhite.item.custom.plants.BloomingPottedCactus;
 import com.vinegarwhite.item.custom.plants.DeadPottedCactus;
 import com.vinegarwhite.item.custom.plants.PottedCactus;
 import net.minecraft.item.Item;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -45,7 +44,7 @@ public class MedicineItems {
     public static final Item STRANGE_VIAL = registerItems("strange_vial",new Strange_Vial(new Item.Settings().food(MedicineFoodComponents.STRANGE_VIAL)));
 
     // 头
-    public static final Item DECAY_HEAD = registerItems("decay_head", new Item(new Item.Settings()));
+    public static final Item DECAY_HEAD = registerItems("decay_head", new DecayHead(new Item.Settings()));
 
     // 注册物品使用的方法
     public static Item registerItems(String id, Item item) {

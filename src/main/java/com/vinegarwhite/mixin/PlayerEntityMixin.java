@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class PlayerEntityMixin {
     @Inject(method = "createPlayerAttributes", at = @At("RETURN"))
     private static void addCustomAttribute(CallbackInfoReturnable<DefaultAttributeContainer.Builder> cir) {
-        // 向属性集添加自定义的精神状态属性
+        // 向玩家属性集添加自定义的精神状态属性
         cir.getReturnValue().add(MedicineEntityAttributes.GENERIC_MENTAL_STATE);
     }
 }

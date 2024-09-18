@@ -75,6 +75,9 @@ public class ModENUSLanProvider_zh_cn extends FabricLanguageProvider {
         // 属性
         translationBuilder.add("attribute.name.generic.mental_state", "精神状态");
 
+        // 药水效果
+        translationBuilder.add("effect.vinegarwhite.severe_condition", "病情较重");
+
         // 创造模式物品栏
         translationBuilder.add("itemGroup.medicine_group", "药绝");
 

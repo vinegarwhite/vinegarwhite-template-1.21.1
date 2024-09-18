@@ -1,5 +1,6 @@
 package com.vinegarwhite.item.custom.pills;
 
+import com.vinegarwhite.attribute.MedicineEntityAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -22,8 +23,17 @@ public class AlphaPill extends Item {
         if(!world.isClient){
             // 物品使用者是玩家的情况下
             if (user instanceof PlayerEntity playerEntity){
-                // 设置冷却时间为20 ticks
-                playerEntity.getItemCooldownManager().set(this, 20);
+                // 设置冷却时间为10000 ticks
+                playerEntity.getItemCooldownManager().set(this, 10000);
+
+                // 检查玩家是否有mental_state属性
+                if (playerEntity.getAttributeInstance(MedicineEntityAttributes.GENERIC_MENTAL_STATE) != null) {
+                    // 获取当前的mental_state值
+                    double currentMentalState = playerEntity.getAttributeInstance(MedicineEntityAttributes.GENERIC_MENTAL_STATE).getBaseValue();
+
+                    // 增加100精神状态
+                    playerEntity.getAttributeInstance(MedicineEntityAttributes.GENERIC_MENTAL_STATE).setBaseValue(currentMentalState + 100.0);
+                }
             }
         }
 

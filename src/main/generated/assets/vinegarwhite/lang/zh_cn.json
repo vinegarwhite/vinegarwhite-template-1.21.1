@@ -10,6 +10,7 @@
   "block.vinegarwhite.ice_ether_stairs": "冰之以太楼梯",
   "block.vinegarwhite.ice_ether_wall": "冰之以太墙",
   "block.vinegarwhite.raw_ice_ether_block": "冰之以太粗矿块",
+  "effect.vinegarwhite.severe_condition": "病情较重",
   "item.salad.shift_tooltip": "使用后恢复精神状态，概率提升身体素质和提升食物的恢复效果。可以移除营养不良。",
   "item.salad.tooltip": "按下§6SHIFT§r查看具体信息",
   "item.vinegarwhite.alpha_pill": "α药",
