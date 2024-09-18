@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "vinegarwhite:block/ice_ether_block"
+  }
+}

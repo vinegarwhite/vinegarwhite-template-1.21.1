@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "vinegarwhite:block/ice_ether_slab"
+    },
+    "type=double": {
+      "model": "vinegarwhite:block/ice_ether_block"
+    },
+    "type=top": {
+      "model": "vinegarwhite:block/ice_ether_slab_top"
+    }
+  }
+}
