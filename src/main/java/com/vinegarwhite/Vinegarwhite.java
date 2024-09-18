@@ -1,8 +1,12 @@
 package com.vinegarwhite;
 
 import com.vinegarwhite.block.ModBlocks;
+import com.vinegarwhite.command.MedicineCommand;
+import com.vinegarwhite.item.MedicineItems;
 import com.vinegarwhite.item.ModItemGroups;
 import com.vinegarwhite.item.ModItems;
+import com.vinegarwhite.tags.MedicineBlockTags;
+import com.vinegarwhite.tags.MedicineItemTags;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -24,10 +28,22 @@ public class Vinegarwhite implements ModInitializer {
 
 		// 注册物品
 		ModItems.registerModItems();
+		MedicineItems.registerModItems();
 		// 注册方块
 		ModBlocks.registerModBlocks();
 		// 注册创造模式物品栏
 		ModItemGroups.registerModItemGroups();
+
+		// 注册物品Tag
+		MedicineItemTags.registerMedicineItemTags();
+		// 注册方块Tag
+		MedicineBlockTags.registerMedicineBlockTags();
+
+		// 修改钓鱼战利品表
+//		MedicineLootTableModifier.modifyLootTable();
+
+		// 注册命令
+		MedicineCommand.register();
 
 		LOGGER.info("Hello Fabric world!");
 	}

@@ -25,5 +25,20 @@ public class ModBlockTagsProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.RAW_ICE_ETHER_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.FENCES)
+                .add(ModBlocks.ICE_ETHER_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.ICE_ETHER_FENCE_GATE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.ICE_ETHER_WALL);
+
+        getOrCreateTagBuilder(BlockTags.BUTTONS)
+                .add(ModBlocks.ICE_ETHER_BUTTON);
+
+//        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+//                .add(ModBlocks.ICE_ETHER_FENCE);
     }
 }

@@ -4,6 +4,7 @@ import com.vinegarwhite.Vinegarwhite;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -15,13 +16,16 @@ public class ModItems {
     public static final Item ICE_ETHER = registerItems("ice_ether", new Item(new Item.Settings()));
     public static final Item RAW_ICE_ETHER = registerItems("raw_ice_ether", new Item(new Item.Settings()));
     public static final Item CHEESE = registerItems("cheese", new Item(new Item.Settings().food(ModFoodComponents.CHEESE)));
-    public static final Item STRAWBERRY = registerItems("strawberry", new Item(new Item.Settings().food(ModFoodComponents.STRAWBERRY)));
 
-    // 药绝道具
-    public static final Item ALPHA_PILL = registerItems("alpha_pill", new Item(new Item.Settings().food(ModFoodComponents.ALPHA_PILL)));
-    public static final Item BETA_PILL = registerItems("beta_pill", new Item(new Item.Settings().food(ModFoodComponents.BETA_PILL)));
-    public static final Item GAMMA_PILL = registerItems("gamma_pill", new Item(new Item.Settings().food(ModFoodComponents.GAMMA_PILL)));
-    public static final Item DELTA_PILL = registerItems("delta_pill", new Item(new Item.Settings().food(ModFoodComponents.DELTA_PILL)));
+    // 护甲
+    public static final Item ICE_ETHER_HELMET = registerItems("ice_ether_helmet", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.HELMET,
+            new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37))));
+    public static final Item ICE_ETHER_CHESTPLATE = registerItems("ice_ether_chestplate", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.CHESTPLATE,
+            new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37))));
+    public static final Item ICE_ETHER_LEGGINGS = registerItems("ice_ether_leggings", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.LEGGINGS,
+            new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37))));
+    public static final Item ICE_ETHER_BOOTS = registerItems("ice_ether_boots", new ArmorItem(ModArmorMaterials.ICE_ETHER, ArmorItem.Type.BOOTS,
+            new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37))));
 
     private static Item registerItems(String id, Item item){
 //        return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), Identifier.of(Vinegarwhite.MOD_ID,id)), item);
